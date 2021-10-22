@@ -1,9 +1,9 @@
 const express = require("express");
 
-const app = express.app();
+const app = express();
 
-const homePage = require("/routes/index.js");
-const aboutPage = require("/routes/about.js");
+const homePage = require("./routes/index.js");
+const aboutPage = require("./routes/about.js");
 
 const port = 3000;
 
