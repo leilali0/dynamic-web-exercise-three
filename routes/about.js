@@ -1,6 +1,14 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 
-app.get("/about", (req, res) => {
+router.get("/", (req, res) => {
+	res.send("About this page");
+});
+
+
+router.get("/me", (req, res) => {
 	res.send("About me");
 });
+
+
+module.exports = router 
